@@ -1,1 +1,1 @@
-# Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL
+# Adidas-US-Sales-Data-Analysis-Using-SQL
