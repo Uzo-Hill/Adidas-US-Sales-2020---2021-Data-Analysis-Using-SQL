@@ -190,4 +190,46 @@ Each question was answered using SQL with the outputs results saved for visualiz
 
 ![KPIOutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/KPI_output.PNG)
 
+---
 
+
+### ✅ Q2: How did Adidas’ sales, margins, and units vary between 2020 and 2021?
+
+![YoYQuery](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/YoY_Sales_Query.PNG)
+
+
+`Output:`
+
+
+![YoYoutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/YoYOutput.PNG)
+
+---
+
+### ✅ Q3: How do monthly and quarterly sales trends reveal seasonal patterns for better inventory planning?
+
+
+![YoYoutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Monthly_Sales_Query.PNG)
+
+`Output:`
+
+
+![YoYoutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Monthly_Sales_Output.PNG)
+
+
+![YoYoutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Quarterly_Sales_Output.PNG)
+
+
+---
+
+---
+
+### ✅ Q4: Which products generates the highest total sales and profit?
+
+
+![RevenueProductQuery](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Product_Query.PNG)
+
+
+`Output:`
+
+
+![RevenueProductOutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Product_Output.PNG)
