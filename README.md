@@ -87,9 +87,54 @@ The original flat file was transformed using Python into four normalized tables 
 | Standardized column names  | CamelCase → `snake_case`                                   |
 | Resolved retailer mapping  | Ensured each retailer had **one consistent ID**            |
 
-NEXT - Attach python cleaning code
+
+
+```python
+
+import pandas as pd
+
+# Load the original CSV
+file_path = "C:\Users\DELL\Desktop\Data Analytics Projects\Adidas Sales Analysis\Adidas US Sales1.xlsx"
+df = pd.excel_csv(file_path)
+
+# Rename columns to SQL-friendly names
+df.rename(columns={
+    'Retailer': 'retailer_name',
+    'Retailer ID': 'retailer_id',
+    'Invoice Date': 'invoice_date',
+    'Region': 'region',
+    'State': 'state',
+    'City': 'city',
+    'Product': 'product_name',
+    'Price per Unit': 'price_per_unit',
+    'Units Sold': 'units_sold',
+    'Total Sales': 'total_sales',
+    'Operating Profit': 'operating_profit',
+    'Operating Margin': 'operating_margin',
+    'Sales Method': 'sales_method'
+}, inplace=True)
+
+# Clean and convert money columns
+money_columns = ['price_per_unit', 'total_sales', 'operating_profit']
+for col in money_columns:
+    df[col] = df[col].replace('[\$,]', '', regex=True).astype(float)
+
+# Clean and convert 'operating_margin' column (remove % and convert to float)
+df['operating_margin'] = df['operating_margin'].replace('[%]', '', regex=True).astype(float)
+
+# Clean 'units_sold' (remove comma and convert to int)
+df['units_sold'] = df['units_sold'].replace(',', '', regex=True).astype(int)
+
+# Save cleaned CSV
+cleaned_file_path = "adidas_sales_clean.csv"
+df.to_csv(cleaned_file_path, index=False)
+
+print(f"Cleaned CSV saved as: {cleaned_file_path}")
+
+```
 
 ---
+
 
 ## 🧱 Database Schema Design
 
@@ -97,25 +142,27 @@ The cleaned data was split into **4 normalized tables**:
 
 ### 🧩 Tables:
 
-1. **`retailers`**
-   - `retailer_id` (PK)
-   - `retailer`
+1. retailers table
+   - retailer_id (PK)
+   - retailer
 
-2. **`products`**
-   - `product_id` (PK)
-   - `product`
-   - `price_per_unit`
+2. products table
+   - product_id (PK)
+   - product
+   - price_per_unit
 
-3. **`locations`**
-   - `location_id` (PK)
-   - `region`, `state`, `city`
+3. locations table
+   - location_id (PK)
+   - region
+   - state
+   - city
 
-4. **`sales`**
-   - `invoice_date`
-   - `retailer_id` (FK)
-   - `product_id` (FK)
-   - `location_id` (FK)
-   - `units_sold`, `total_sales`, `operating_profit`, `operating_margin`, `sales_method`
+4. sales facttable
+   - invoice_date
+   - retailer_id (FK)
+   - product_id (FK)
+   - location_id (FK)
+   - units_sold, total_sales, operating_profit, operating_margin, sales_method
 
 📌 **[Attach ERD Image Here]**  
 `![ERD](./documentation/ERD.png)`
