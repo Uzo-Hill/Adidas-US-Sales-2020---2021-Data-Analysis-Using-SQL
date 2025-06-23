@@ -138,7 +138,7 @@ print(f"Cleaned CSV saved as: {cleaned_file_path}")
 
 ## 🧱 Database Schema Design
 
-The cleaned data was split into **4 normalized tables**:
+The cleaned data was split into a 4 normalized relational database for advanced SQL analytics like JOINS.
 
 ### 🧩 Tables:
 
@@ -164,7 +164,30 @@ The cleaned data was split into **4 normalized tables**:
    - location_id (FK)
    - units_sold, total_sales, operating_profit, operating_margin, sales_method
 
-📌 **[Attach ERD Image Here]**  
-`![ERD](./documentation/ERD.png)`
+
+
+  ![Dtabase Design](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/DBDesign.PNG) 
+
+ ![Dtabase Design](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/EER_Diagram.PNG)
+
 
 ---
+
+
+## 📊 Business Questions & SQL Analysis
+
+Each question was answered using SQL with the outputs results saved for visualizations.
+
+
+### ✅ Q1: What are the overall total sales, average profit margin, and total units sold?
+
+![KPIQuery](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/KPI_query.PNG)
+
+
+`Output:`
+
+
+
+![KPIOutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/KPI_output.PNG)
+
+
