@@ -95,7 +95,7 @@ import pandas as pd
 
 # Load the original CSV
 file_path = "C:\Users\DELL\Desktop\Data Analytics Projects\Adidas Sales Analysis\Adidas US Sales1.xlsx"
-df = pd.excel_csv(file_path)
+df = pd.read_excel(file_path)
 
 # Rename columns to SQL-friendly names
 df.rename(columns={
@@ -233,3 +233,151 @@ Each question was answered using SQL with the outputs results saved for visualiz
 
 
 ![RevenueProductOutput](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Product_Output.PNG)
+
+
+---
+
+---
+
+### ✅ Q5: Which regions and states deliver the highest sales volume and profitability margins to prioritize expansion and marketing efforts?
+
+
+![RevenueByLocation](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Location_Query.PNG)
+
+
+`Output:`
+
+
+![RevenueByLocation](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Location_Output.PNG)
+
+
+
+![RevenueByLocation](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_State_output.PNG)
+
+---
+
+
+---
+
+
+### ✅ Q6: Which retailers generate the highest sales volume and profit margins across product categories?
+
+
+
+![RevenueByRetailers](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Retailer_Query.PNG)
+
+
+`Output:`
+
+![RevenueByRetailers](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_By_Retailer_Output.PNG)
+
+
+---
+
+
+---
+
+### ✅ Q7: How do different sales channels compare in terms of sales volume, profitability margins, and average transaction size to optimize channel strategy? 
+
+
+
+![RevenueByChannels](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_Channels_Query.PNG)
+
+
+`Output:`
+
+![RevenueByChannel](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Sales_Channels_Output.PNG)
+
+
+---
+
+
+---
+
+
+### ✅ Q8: What are the low performing states and cities?
+
+
+
+![LowPerformingCities](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/LowPerformingLocationsQuery.PNG)
+
+
+`Output:`
+
+![LowPerformingCities](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/LowPerformingLocationsOutput.PNG)
+
+
+---
+
+---
+
+
+## 📈 Data Visualization
+Dashboards reports were built in **Power BI**  to visualize major KPIs and insights from our SQL data query outputs.
+
+
+
+
+
+
+
+## 📊 Dashboard Visualizations
+
+| [![Executive Dashboard](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Dashboard1.PNG)](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Dashboard1.PNG) | [![Geographic Dashboard](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Dashboard2.PNG)](https://github.com/Uzo-Hill/Adidas-US-Sales-2020---2021-Data-Analysis-Using-SQL/blob/main/ProjectImages/Dashboard2.PNG) |
+|:-------------------------------------------------------------:|:--------------------------------------------------------------:|
+| **Executive Summary**<br>KPIs and trends                      | **Geographic Analysis**<br>Regional performance                |
+
+
+---
+
+
+---
+
+
+## 🔍 Key Insights
+- In 2021, Adidas recorded a total sales revenue of $717.8M, representing a YoY increase of $535.7M from $182.1M in 2020. Units sold also surged from 462K to 2.02M, a growth of 1.55M units. Additionally, the average profit margin improved from 40.37% to 42.60%, marking a YoY gain of 2.23%.
+- Monthly and quarterly trend analysis revealed Q3 and July as peak sales periods.
+- Men’s Street Footwear and Women’s Apparel were top-performing categories, generating $209M and $179M in total sales respectively,
+- In-store generated **45%** of sales but Online had best margins (**39%**)
+- West Gear and Foot Locker emerged as the top-performing retailers by sales volume, generating $243.0M and $220.1M respectively. Together, they contributed approximately 51.5% of Adidas’ total sales revenue across all retail partners, highlighting their strategic importance in overall retail performance.
+- New York, California, and Florida led Adidas' state-level performance, contributing a combined 20.4% of total sales—$64.2M, $60.2M, and $59.3M respectively—making them the top three revenue-generating states across the U.S. during the 2020–2021 period.
+
+
+---
+
+
+---
+
+## ✅ Recommendations
+- Prioritize inventory and marketing investments in high-performing states like New York, California, and Florida to maximize regional returns.
+
+- Strengthen partnerships with top-performing retailers such as West Gear and Foot Locker to scale distribution and leverage existing sales momentum.
+
+- Enhance online and outlet channel strategies by optimizing product bundling and digital promotions to improve their profit margins and sales contribution.
+
+
+
+## 🧠 Final Thoughts
+
+This project demonstrates how a well-structured relational dataset and effective SQL queries can uncover valuable retail insights. Integrating SQL with dashboarding tools enables powerful storytelling and decision support.
+
+---
+
+## 📌 Project Credits
+
+- **Author:** Uzoh C. Hillary  
+- **LinkedIn:** [linkedin.com/in/hillaryuzoh](https://www.linkedin.com/in/hillaryuzoh)  
+- **GitHub:** [github.com/Uzo-Hill](https://github.com/Uzo-Hill)
+
+---
+
+## 🗃️ Resources
+
+- Dataset: [Kaggle - Adidas US Sales](https://www.kaggle.com/datasets/sagarmorework/adidas-us-sales)
+- Tools: Python, MySQL, Power BI, Excel
+- Diagram: MySQL Workbench ERD
+
+---
+
+> ⭐ **Feel free to fork this project, open issues, or contribute improvements.**
+
