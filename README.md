@@ -371,13 +371,8 @@ This project demonstrates how a well-structured relational dataset and effective
 
 ---
 
-## 🗃️ Resources
-
-- Dataset: [Kaggle - Adidas US Sales](https://www.kaggle.com/datasets/sagarmorework/adidas-us-sales)
-- Tools: Python, MySQL, Power BI, Excel
-- Diagram: MySQL Workbench ERD
 
 ---
 
-> ⭐ **Feel free to fork this project, open issues, or contribute improvements.**
+> ⭐ **Feel free to contribute improvements.**
 
